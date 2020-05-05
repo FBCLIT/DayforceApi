@@ -1,0 +1,21 @@
+{
+    "name": "fbclit/dayforce-api",
+    "description": "A PHP Ceridian Dayforce API wrapper.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Bauman",
+            "email": "steven_bauman@outlook.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fbclit\\DayforceApi\\": "src/"
+        }
+    }
+}
