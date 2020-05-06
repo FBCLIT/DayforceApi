@@ -3,7 +3,6 @@
 ## Requirements
 
 - PHP >= 7.2
-- PHP JSON Extension enabled
 
 ## Installation
 
@@ -19,11 +18,10 @@ use Fbclit\DayforceApi\ApiException;
 use Fbclit\DayforceApi\NoDataException;
 
 $url = 'http://usconfigr58.dayforcehcm.com';
-$company = 'acme';
 
-$client = new Client($url, $company);
+$client = new Client($url, $company = 'acme');
 
-$api = $client->connect('username', 'secret');
+$api = $client->api('username', 'secret');
 
 try {
     $employees = $api->employees();
