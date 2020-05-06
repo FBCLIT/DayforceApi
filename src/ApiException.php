@@ -48,6 +48,6 @@ class ApiException extends Exception
      */
     public function getProcessResults()
     {
-        return $this->decodeResponse($this->response)['processResults'];
+        return $this->decodeResponse($this->response)['processResults'] ?? [];
     }
 }

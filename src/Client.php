@@ -2,10 +2,8 @@
 
 namespace Fbclit\DayforceApi;
 
-use Exception;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Client as HttpClient;
-use Psr\Http\Message\ResponseInterface;
 
 class Client
 {
